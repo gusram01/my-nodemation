@@ -8,5 +8,6 @@ services:
         - "5678:5678"
       volumes:
         - n8n_storage:/home/node/.n8n
+        - ./custom-certs/rds-combined-ca-bundle.pem:/home/node/rds-combined-ca-bundle.pem:ro
 volumes:
   n8n_storage:
